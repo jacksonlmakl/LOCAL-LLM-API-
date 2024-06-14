@@ -1,6 +1,10 @@
 FROM python:3.9-slim
 
-ENV HUGGINGFACE_ACCESS_TOKEN=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
+# Define build argument
+ARG HUGGINGFACE_ACCESS_TOKEN
+
+# Set environment variable from the build argument
+ENV HUGGINGFACE_ACCESS_TOKEN=${HUGGINGFACE_ACCESS_TOKEN}
 
 WORKDIR /app
 
