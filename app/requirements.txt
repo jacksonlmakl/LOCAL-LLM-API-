@@ -1,0 +1,6 @@
+transformers
+flask
+torch
+sentence-transformers
+transformers[torch]  # or tensorflow if you prefer
+flask
